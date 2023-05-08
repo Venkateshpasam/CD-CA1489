@@ -1,0 +1,18 @@
+(17 sloc)  199 Bytes
+%{
+int c=0;
+%}
+%%
+[A-Za-z0-9]+ {c++;printf("%s",yytext);}
+. ;
+%%
+int yywrap(){
+return 1;
+}
+int main()
+{
+printf("enter the string:");
+yylex();
+printf("noof words=%d\n",
+                         c);
+}
