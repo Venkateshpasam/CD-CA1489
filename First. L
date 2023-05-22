@@ -1,0 +1,27 @@
+            }
+
+    }
+
+}
+
+    return ;
+
+}
+
+void addToResultSet(char Result[],char val)
+
+{
+
+    int k;
+
+    for(k=0 ;Result[k]!='\0';k++)
+
+        if(Result[k]==val)
+
+            return;
+
+    Result[k]=val;
+
+    Result[k+1]='\0';
+
+}
